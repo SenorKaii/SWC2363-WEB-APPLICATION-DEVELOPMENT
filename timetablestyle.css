@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header for all pages of the website */
+#header {
+	background-color: white;
+	height: auto;
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 80px;
+}
+
+#header .loginicon {
+	float: right;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	margin: 0px;
+}
+
+#header .login {
+	float: right;
+	margin: 3px 5px;
+	font-family: 'Raleway';
+	font-size: 18px;
+}
+
+#header .arrow {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	float: right;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+#header .logout {
+	margin-left: 1410px;
+	margin-top: -20px;
+	margin-bottom: -20px;	
+}
+
+#header .logoutdropdown {
+	position: relative;
+	display: inline-block;
+}
+
+#header .logoutbtn {
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	width: 190px;
+}
+
+#header .logoutcontent {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	margin-left: 10px;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#header .logoutcontent a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#header .logoutcontent a:hover {background-color: #ddd;}
+#header .logoutdropdown:hover .logoutcontent {display: block;}
+
+#header .blackline {
+	border-top: 1px solid black;
+	margin-top: 40px;
+}
+
+#header .secondheader {
+	margin-top: 30px;
+	
+}
+
+#header .secondheader .logo {
+	float: left;
+	height: 30px;
+	width: 180px;
+	margin: 10px;
+}
+
+#header .secondheader .rightheader {
+	float : left;
+} 
+
+#header .secondheader .rightheader .headerfont {
+	font-size: 21px;
+	margin: 0px;
+	font-family: 'Raleway';
+}
+
+#header .secondheader .rightheader .tinyfont {
+	font-size: 18px;
+	margin-top: 5px;
+	font-family: 'Raleway';
+}
+
+#header .secondheader .navigation {
+	float: right;
+}
+
+#header .secondheader .navigation .btn {
+	background-color: #FFFFFF;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 10px;
+	cursor: pointer;
+	font-family: 'Raleway';
+}
+
+#header .dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+#header .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#header .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#header .dropdown-content a:hover {background-color: #ddd;}
+#header .dropdown:hover .dropdown-content {display: block;}
+
+/* First Container */
+#container1 {
+	padding: 100px;
+}
+
+#container1 * {box-sizing: border-box}
+#container1 .mySlides {display: none}
+#container1 img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Second Container */
+#container2 {
+	padding: 100px;
+}
+
+#container2 .timetable h1 {
+	color: white;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container2 .timetable {
+	text-align: center;
+	background: url("timetablebg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px;
+	border: 1px solid black;
+}
+
+/* Third Container */
+#container3 {
+	padding: 100px;
+	background-color: lightgray;
+}
+
+#container3 .recording {
+	text-align: center;
+	background: url("recordingbg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px;
+	border: 1px solid black;
+}
+
+#container3 .recording h1 {
+	color: black;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* Footer for all pages of the website */
+#footer {
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'Raleway';
+	text-decoration: none;
+}

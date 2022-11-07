@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="loungestyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Chelsea Market" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/8f5f1cbf46.js" crossorigin="anonymous"></script>
+		<title>Lounge | CMS</title>
+		<link rel="icon" type="image/x-icon" href="kuptmlogo.png">
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="logout">
+				<div class="logoutdropdown">
+					<button class="logoutbtn">
+						<i class="arrow down"></i>
+						<p class="login">&nbsp;&nbsp;Hello Khalis&nbsp;&nbsp;</p>
+						<img src="iconprofile.png" alt ="" class="loginicon">
+					</button>
+					<div class="logoutcontent">
+						<a href="login.html">Logout</a>
+					</div>
+				</div>
+			</div>
+			
+			<hr class="blackline">
+			
+			<div class = "secondheader">
+				<img src="headerlogo.png" alt ="" class="logo">
+				<div class = "rightheader">
+					<p class ="headerfont">&nbsp;<b>CAMPUS MANAGEMENT SYSTEM</b><br></p>
+					<p class ="tinyfont">&nbsp;CMS @ KUPTM</p>
+				</div>
+	
+				<div class = "navigation">
+					<button onclick="document.location='Home.php'" class="btn">Home</button>
+					<button onclick="document.location='Academic.php'" class="btn">Academic</button>
+					<button onclick="document.location='Vaccine.php'" class="btn">Vaccine</button>
+					<div class="dropdown">
+						<button class="btn">More</button>
+						<div class="dropdown-content">
+							<a href="lounge.html">Student Lounge</a>
+							<a href="#">KO-Q</a>
+							<a href="#">Finance</a>
+							<a href="timetable.html">Time Table</a>
+							<a href="#">Student</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="container1">
+			<div class="box">
+				<h1>LOUNGE</h1>
+				<p class = "paragraph">- A Place To Help You Relieve Stress -</p>
+			</div>
+		</div>
+		
+		<div id="container2">
+			<div class="music">
+				<h1>LISTENING TO LIVE RELAXING MUSIC</h1>
+				<iframe width="1200" height="600" frameborder="0" src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1&mute=1"></iframe>
+			</div>
+		</div>
+		
+		<div id="container3">
+			<div class="gamesbox">
+				<div class="minigames">
+					<h1>PLAY MINIGAMES</h1>
+					<iframe width="1200" height="600" frameborder="0" src="http://ellisonleao.github.io/clumsy-bird/"></iframe>
+				</div>
+
+				<div class="minigames2">
+					<iframe width="1200" height="600" frameborder="0" src="https://games.cdn.famobi.com/html5games/t/totemia-cursed-marbles/v230/?fg_domain=play.famobi.com&fg_aid=A1000-100&fg_uid=ca588700-4790-46f1-82a2-cef934fd368a&fg_pid=5a106c0b-28b5-48e2-ab01-ce747dda340f&fg_beat=532&original_ref=https%3A%2F%2Fplay.famobi.com%2Fhtml5game%2Fca588700-4790-46f1-82a2-cef934fd368a%2FA1000-10"></iframe>
+				</div>
+
+				<div class="minigames3">
+					<iframe width="1200" height="600" frameborder="0" src="https://hextris.io/"></iframe>
+				</div>
+			</div>
+		</div>
+		
+		<div id="container4">
+			<div class="podcast">
+				<h1>LISTENING TO PODCAST</h1>
+				<div id="embed-iframe"></div>
+				<script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async>
+				</script>
+				<script type="text/javascript">
+				  window.onSpotifyIframeApiReady = (IFrameAPI) => {
+					let element = document.getElementById('embed-iframe');
+					let options = {
+						width: '60%',
+						height: '200',
+						uri: 'spotify:episode:2eyqVEGKVYqjj12HLoHNw1'
+					  };
+					let callback = (EmbedController) => {
+					  document.querySelectorAll('ul#episodes > li > button').forEach(
+						episode => {
+						  episode.addEventListener('click', () => {
+							EmbedController.loadUri(episode.dataset.spotifyId)
+						  });
+						})
+					};
+					IFrameAPI.createController(element, options, callback);
+				  };
+				</script>
+				<h1>Pick an episode...</h1>
+				<ul id="episodes">
+					<li>
+						<button data-spotify-id="spotify:episode:2eyqVEGKVYqjj12HLoHNw1">
+						  [EDUCATION] Dream Big: New Motivational Compilation for Succes &amp; Studying
+						</button>
+					</li>
+					<li>
+						<button data-spotify-id="spotify:episode:4z2Bg8fRJaIBYuJhy7OJPT">
+						  [DOCUMENTARY] Dullahan: The Headless Horseman
+						</button>
+					</li>
+					<li>
+						<button data-spotify-id="spotify:episode:2H55jf8G6UsInl5GMG0r0a">
+						  [FITNESS &amp; NUTRITION] Releasing Trauma: Meditation To Reduce Stress
+						</button>
+					</li>
+					<li>
+						<button data-spotify-id="spotify:episode:4jkYVn5LVaqUWjY6AReESD">
+						  [POP CULTURE] The Sandman: Dreamcast Complete Experience
+						</button>
+					</li>
+					<li>
+						<button data-spotify-id="spotify:episode:6NCGs0KnonKsVbAGQGKhYh">
+						  [ISLAMIC] Mishary Rashid Alafasy: Al-Kahf
+						</button>
+					</li>
+					<li>
+						<button data-spotify-id="spotify:episode:7q6tpRnEiYjwph1c9gEFYq">
+						  [COMEDY] A Conversation About What Our Country Needs, With Syed Saddiq
+						</button>
+					</li>
+					<li>
+						<button data-spotify-id="spotify:episode:1d8V8uaaa2aG5CyqCbcOMe">
+						  [BOOKS] Lord Of The Rings: The Ainulindale
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<a href="https://www.facebook.com/kuptmkl.official" target="_blank"><i class="fa-brands fa-square-facebook" style="font-size:36px;"></i></a>
+			<a href="https://www.instagram.com/kuptmkl_official/" target="_blank"><i class="fa-brands fa-square-instagram" style="font-size:36px;"></i></a>
+			<a href="https://www.youtube.com/channel/UCN1sNU5pB8cFdmYi_ekXzew" target="_blank"><i class="fa-brands fa-square-youtube" style="font-size:36px;"></i></a>
+			<p>&copy; 2022 by Khalis Firdaus (FCOM Student). Proudly created with Adobe Dreamweaver</p>
+		</div>
+	</body>
+</html>

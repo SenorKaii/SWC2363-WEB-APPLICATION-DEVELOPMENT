@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="timetablestyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Chelsea Market" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/8f5f1cbf46.js" crossorigin="anonymous"></script>
+		<title>Timetable | CMS</title>
+		<link rel="icon" type="image/x-icon" href="kuptmlogo.png">
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="logout">
+				<div class="logoutdropdown">
+					<button class="logoutbtn">
+						<i class="arrow down"></i>
+						<p class="login">&nbsp;&nbsp;Hello Khalis&nbsp;&nbsp;</p>
+						<img src="iconprofile.png" alt ="" class="loginicon">
+					</button>
+					<div class="logoutcontent">
+						<a href="login.html">Logout</a>
+					</div>
+				</div>
+			</div>
+			
+			<hr class="blackline">
+			
+			<div class = "secondheader">
+				<img src="headerlogo.png" alt ="" class="logo">
+				<div class = "rightheader">
+					<p class ="headerfont">&nbsp;<b>CAMPUS MANAGEMENT SYSTEM</b><br></p>
+					<p class ="tinyfont">&nbsp;CMS @ KUPTM</p>
+				</div>
+	
+				<div class = "navigation">
+					<button onclick="document.location='Home.php'" class="btn">Home</button>
+					<button onclick="document.location='Academic.php'" class="btn">Academic</button>
+					<button onclick="document.location='Vaccine.php'" class="btn">Vaccine</button>
+					<div class="dropdown">
+						<button class="btn">More</button>
+						<div class="dropdown-content">
+							<a href="lounge.html">Student Lounge</a>
+							<a href="#">KO-Q</a>
+							<a href="#">Finance</a>
+							<a href="timetable.html">Time Table</a>
+							<a href="#">Student</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container1">
+			<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="slide1.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="slide2.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="slide3.png" style="width:100%">
+			</div>
+				
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="slide4.png" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#8678;</a>
+			<a class="next" onclick="plusSlides(1)">&#8680;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+			</script>
+		</div>
+		
+		<div id="container2">
+			<div class="timetable">
+				<h1>STUDENT TIME TABLE</h1>
+				<img src="timetableimg.png" alt="">
+			</div>
+		</div>
+		
+		<div id="container3">
+			<div class="recording">
+				<h1>LATEST RECORDING CLASS ONLINE</h1>
+				<iframe width="1200" height="600" frameborder="0" src="https://www.youtube.com/embed/KljREtVAPog?autoplay=1&mute=1"></iframe>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<a href="https://www.facebook.com/kuptmkl.official" target="_blank"><i class="fa-brands fa-square-facebook" style="font-size:36px;"></i></a>
+			<a href="https://www.instagram.com/kuptmkl_official/" target="_blank"><i class="fa-brands fa-square-instagram" style="font-size:36px;"></i></a>
+			<a href="https://www.youtube.com/channel/UCN1sNU5pB8cFdmYi_ekXzew" target="_blank"><i class="fa-brands fa-square-youtube" style="font-size:36px;"></i></a>
+			<p>&copy; 2022 by Khalis Firdaus (FCOM Student). Proudly created with Adobe Dreamweaver</p>
+		</div>
+	</body>
+</html>
+

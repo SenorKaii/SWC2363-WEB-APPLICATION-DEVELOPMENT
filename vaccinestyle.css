@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header for all pages of the website */
+#header {
+	background-color: white;
+	height: auto;
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 80px;
+}
+
+#header .loginicon {
+	float: right;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	margin: 0px;
+}
+
+#header .login {
+	float: right;
+	margin: 3px 5px;
+	font-family: 'Raleway';
+	font-size: 18px;
+}
+
+#header .arrow {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	float: right;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+#header .logout {
+	margin-left: 1410px;
+	margin-top: -20px;
+	margin-bottom: -20px;	
+}
+
+#header .logoutdropdown {
+	position: relative;
+	display: inline-block;
+}
+
+#header .logoutbtn {
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	width: 190px;
+}
+
+#header .logoutcontent {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	margin-left: 10px;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#header .logoutcontent a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#header .logoutcontent a:hover {background-color: #ddd;}
+#header .logoutdropdown:hover .logoutcontent {display: block;}
+
+#header .blackline {
+	border-top: 1px solid black;
+	margin-top: 40px;
+}
+
+#header .secondheader {
+	margin-top: 30px;
+	
+}
+
+#header .secondheader .logo {
+	float: left;
+	height: 30px;
+	width: 180px;
+	margin: 10px;
+}
+
+#header .secondheader .rightheader {
+	float : left;
+} 
+
+#header .secondheader .rightheader .headerfont {
+	font-size: 21px;
+	margin: 0px;
+	font-family: 'Raleway';
+}
+
+#header .secondheader .rightheader .tinyfont {
+	font-size: 18px;
+	margin-top: 5px;
+	font-family: 'Raleway';
+}
+
+#header .secondheader .navigation {
+	float: right;
+}
+
+#header .secondheader .navigation .btn {
+	background-color: #FFFFFF;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 10px;
+	cursor: pointer;
+	font-family: 'Raleway';
+}
+
+#header .dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+#header .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#header .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#header .dropdown-content a:hover {background-color: #ddd;}
+#header .dropdown:hover .dropdown-content {display: block;}
+
+/* First Container */
+#container1 {
+	padding: 100px;
+}
+
+#container1 .covidvaccineimg {
+	margin: -100px;
+	padding: 353px 279px;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('vaccinebg.png') ;
+	width: 1345px;
+	opacity: 2;
+}
+
+#container1 .covidvaccinebox {
+	width: 970px;
+	height: 710px;
+	background: rgba(255, 255, 255, 0.7);;
+	text-align: left;
+	margin: -610px -100px;
+	float: right;
+}
+
+#container1 .covidvaccine {
+	padding: 60px 80px;
+}
+
+#container1 .covidvaccine h1 {
+	color: #193669;
+	font-size: 70px;
+}
+
+#container1 .covidvaccine p {
+	font-family: 'Chelsea Market';
+	color: #474747;
+	line-height: 1.5;
+	font-size: 20px;
+}
+
+#container1 .covidvaccinebtn {
+	background-color: #FF6161;
+	border: none;
+	color: white;
+	padding: 12px 26px;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+#container1 .covidvaccinebtn:hover {
+  background-color: #F27979;
+}
+
+/* Second Container */
+#container2 {
+	padding: 100px;
+}
+
+#container2 h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container2 table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#container2 .studentinfo th {
+	padding: 10px;
+	font-family: 'Raleway';
+	background-color: aliceblue;
+	text-align: center;
+}
+
+#container2 .studentinfo td {
+	padding: 10px;
+	font-family: 'Raleway';
+	font-weight: bold;
+}
+
+#container2 .vaccineinfo {
+	width: 800px;
+}
+
+#container2 .vaccineinfo th {
+	padding: 10px;
+	font-family: 'Raleway';
+	background-color: antiquewhite;
+	text-align: center;
+}
+
+#container2 .vaccineinfo td {
+	padding: 10px;
+	font-family: 'Raleway';
+	font-weight: bold;
+}
+
+#container2 .vaccinegif {
+	width: 150px;
+	height: 150px;
+	margin-left: 1200px;
+	margin-top: -90px;
+	margin-bottom: -70px;
+}
+
+/* Youtube Container */
+#youtube {
+	padding: 100px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('covidbg.jpg') ;
+	background-color: lightgray;
+	text-align: center;
+	
+}
+
+#youtube h1 {
+	color: white;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* Third Container */
+#container3 {
+	padding: 100px;
+	margin-top: -50px;
+}
+
+#container3 h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container3 table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#container3 .covidinfo {
+	width: 700px;
+}
+
+#container3 .covidinfo th {
+	padding: 10px;
+	font-family: 'Raleway';
+	background-color: pink;
+	text-align: center;
+}
+
+#container3 .covidinfo td {
+	padding: 10px;
+	font-family: 'Raleway';
+	font-weight: bold;
+	width: 500px;
+	text-align: center;
+}
+
+#container3 p {
+	color: red;
+	text-align: center;
+	font-weight: bold;
+}
+
+#container3 .covidbtn {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#container3 .covidregister {
+	background-color: black;
+	color: white;
+	padding: 12px 70px;
+	margin-top: 20px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	font-family: 'Raleway';
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#container3 .covidregister:hover {
+  background-color: grey;
+}
+
+#container3 .virus {
+	width: 100px;
+	height: 100px;
+	margin-left: 1150px;
+	margin-top: -100px;
+	margin-bottom: -50px;
+}
+
+/* Footer for all pages of the website */
+#footer {
+	text-align: center;
+	font-family: 'Raleway';
+	text-decoration: none;
+}

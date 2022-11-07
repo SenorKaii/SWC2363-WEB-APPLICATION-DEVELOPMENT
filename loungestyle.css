@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header for all pages of the website */
+#header {
+	background-color: white;
+	height: auto;
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 80px;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header for all pages of the website */
+#header {
+	background-color: white;
+	height: auto;
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 80px;
+}
+
+#header .loginicon {
+	float: right;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	margin: 0px;
+}
+
+#header .login {
+	float: right;
+	margin: 3px 5px;
+	font-family: 'Raleway';
+	font-size: 18px;
+}
+
+#header .arrow {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	float: right;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+#header .logout {
+	margin-left: 1410px;
+	margin-top: -20px;
+	margin-bottom: -20px;	
+}
+
+#header .logoutdropdown {
+	position: relative;
+	display: inline-block;
+}
+
+#header .logoutbtn {
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	width: 190px;
+}
+
+#header .logoutcontent {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	margin-left: 10px;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#header .logoutcontent a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#header .logoutcontent a:hover {background-color: #ddd;}
+#header .logoutdropdown:hover .logoutcontent {display: block;}
+
+#header .blackline {
+	border-top: 1px solid black;
+	margin-top: 40px;
+}
+
+#header .secondheader {
+	margin-top: 30px;
+	
+}
+
+#header .secondheader .logo {
+	float: left;
+	height: 30px;
+	width: 180px;
+	margin: 10px;
+}
+
+#header .secondheader .rightheader {
+	float : left;
+} 
+
+#header .secondheader .rightheader .headerfont {
+	font-size: 21px;
+	margin: 0px;
+	font-family: 'Raleway';
+}
+
+#header .secondheader .rightheader .tinyfont {
+	font-size: 18px;
+	margin-top: 5px;
+	font-family: 'Raleway';
+}
+
+#header .secondheader .navigation {
+	float: right;
+}
+
+#header .secondheader .navigation .btn {
+	background-color: #FFFFFF;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 10px;
+	cursor: pointer;
+	font-family: 'Raleway';
+}
+
+#header .dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+#header .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#header .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#header .dropdown-content a:hover {background-color: #ddd;}
+#header .dropdown:hover .dropdown-content {display: block;}
+
+/* First Container */
+#container1 {
+	padding: 70px;
+	background: url("loungebg.png") no-repeat;
+	color: white;
+	font-size: 45px;
+	font-family: 'Raleway';
+	text-align: center;
+}
+
+#container1 .box {
+	width: 500px;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	text-align: center;
+	margin: auto;
+	color: white;
+	font-family: 'Century Gothic',sans-serif;
+}
+
+#container1 .paragraph{
+	font-size: 20px;
+	font-family: 'Raleway';
+	margin-top: -10px;
+}
+
+/* Second Container */
+#container2 {
+	padding: 100px;
+}
+
+#container2 .music {
+	text-align: center;
+	background: url(musicbg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px;
+	border: 1px solid black;
+}
+
+#container2 .music h1 {
+	color: white;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/* Third Container */
+#container3 {
+	padding: 100px;
+	background-color: lightgray;
+}
+
+#container3 .gamesbox {
+	border: 1px solid black;
+}
+
+#container3 .minigames {
+	text-align: center;
+	background: url(minigamesbg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px;
+}
+
+#container3 .minigames h1 {
+	color: white;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container3 .minigames2 {
+	text-align: center;
+	background: url(pianobg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px;
+}
+
+#container3 .minigames3 {
+	text-align: center;
+	background: url(minigames3bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px;
+}
+
+/* Fourth Container */
+#container4 {
+	padding: 100px;
+}
+
+#container4 .podcast {
+	text-align: center;
+	background: url("podcastbg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px;
+	border: 1px solid black;
+}
+
+#container4 .podcast h1 {
+	color: white;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+ul#episodes {
+	margin-left: 450px;
+	width: 35%;
+}
+
+ul#episodes > li {
+	list-style-type: none;
+}
+
+#container4 button {
+	border-radius:  7px;
+	border: 0;
+	background: #191414;
+	color: #fff;
+	padding:  10px;
+	margin:  0 0 3px 0;
+	width: 100%;
+	cursor: pointer;
+}
+
+#container4 button:hover {
+	background: #1Db954;
+}
+
+/* Footer for all pages of the website */
+#footer {
+	margin-top: 10px;
+	text-align: center;
+	font-family: 'Raleway';
+	text-decoration: none;
+}

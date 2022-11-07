@@ -1,0 +1,925 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header for all pages of the website */
+#header {
+	background-color: white;
+	height: auto;
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 80px;
+}
+
+#header .loginicon {
+	float: right;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	margin: 0px;
+}
+
+#header .login {
+	float: right;
+	margin: 3px 5px;
+	font-family: 'Raleway';
+	font-size: 18px;
+}
+
+#header .arrow {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	float: right;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+#header .logout {
+	margin-left: 1410px;
+	margin-top: -20px;
+	margin-bottom: -20px;	
+}
+
+#header .logoutdropdown {
+	position: relative;
+	display: inline-block;
+}
+
+#header .logoutbtn {
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	width: 190px;
+}
+
+#header .logoutcontent {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	margin-left: 10px;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#header .logoutcontent a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#header .logoutcontent a:hover {background-color: #ddd;}
+#header .logoutdropdown:hover .logoutcontent {display: block;}
+
+#header .blackline {
+	border-top: 1px solid black;
+	margin-top: 40px;
+}
+
+#header .secondheader {
+	margin-top: 30px;
+	
+}
+
+#header .secondheader .logo {
+	float: left;
+	height: 30px;
+	width: 180px;
+	margin: 10px;
+}
+
+#header .secondheader .rightheader {
+	float : left;
+} 
+
+#header .secondheader .rightheader .headerfont {
+	font-size: 21px;
+	margin: 0px;
+	font-family: 'Raleway';
+}
+
+#header .secondheader .rightheader .tinyfont {
+	font-size: 18px;
+	margin-top: 5px;
+	font-family: 'Raleway';
+}
+
+#header .secondheader .navigation {
+	float: right;
+}
+
+#header .secondheader .navigation .btn {
+	background-color: #FFFFFF;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	margin: 4px 10px;
+	cursor: pointer;
+	font-family: 'Raleway';
+}
+
+#header .dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+#header .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#header .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#header .dropdown-content a:hover {background-color: #ddd;}
+#header .dropdown:hover .dropdown-content {display: block;}
+
+/* First Container */
+#container1 {
+	padding: 280px;
+	text-align: center;
+	background: url(academicbanner.png) no-repeat;
+	color: white;
+	font-size: 20px;
+	font-family: 'Raleway';
+	width: 1345px;
+}
+
+/* Second Container */
+#container2 {
+	margin: 80px;
+}
+
+#container2 .scroll {
+	width: 200px;
+	height: 200px;
+	margin-left: 1200px;
+	margin-top: -140px;
+	margin-bottom: -50px;
+}
+
+#container2 .sarjana {
+	width: 250px;
+	height: 150px;
+	margin-left: 320px;
+	margin-top: -140px;
+	margin-bottom: -50px;
+}
+
+#container2 .title {
+	text-align: center;
+	font-family: 'Raleway';
+	font-size: 18px;
+}
+
+#container2 .paragraph {
+	text-align: center;
+	font-family: 'Raleway';
+	line-height: 1.6;
+	font-size: 15px;
+}
+
+/* Third Container */
+#container3 {
+	padding: 100px;
+	background-color: #F7F7F7;
+	text-align: center;
+}
+
+#container3 * {
+  box-sizing: border-box;
+}
+
+#container3  .example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+#container3  .example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+#container3 .example button:hover {
+  background: #0b7dda;
+}
+
+#container3 .example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#container3 h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+}
+
+#container3 .paragraph1 {
+	font-family: 'Raleway';
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#container3 .paragraph2 {
+	font-family: 'Raleway';
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+#container3 .contactbtn {
+	background-color: #193669;
+	border: none;
+	color: white;
+	padding: 12px 14px;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 15px;
+	text-decoration: none;
+	margin-top: 30px;
+	
+}
+
+#container3 .teacher1 {
+	margin: 80px 300px ;
+	padding: 0px;
+}
+
+#container3 .teacher1 .nuri {
+	width: 462px;
+    height: 320px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#container3 .teacher1 .text1 {
+	float: right;
+	text-align: left;
+	padding: 100px;
+	font-family: 'Raleway';
+	font-size: 20px;
+}
+
+#container3 .teacher2 {
+	margin: 80px 300px ;
+	padding: 0px;
+}
+
+#container3 .teacher2 .rukhiyah {
+	width: 462px;
+    height: 320px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#container3 .teacher2 .text2 {
+	float: right;
+	text-align: left;
+	padding: 100px;
+	font-family: 'Raleway';
+	font-size: 20px;
+	margin-right: 70px;
+}
+
+#container3 .teacher3 {
+	margin: 80px 300px 0px; ;
+	padding: 0px;
+}
+
+
+#container3 .teacher3 .akmal {
+	width: 462px;
+    height: 320px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#container3 .teacher3 .text3 {
+	float: right;
+	text-align: left;
+	padding: 100px;
+	font-family: 'Raleway';
+	font-size: 20px;
+	margin-right: 90px;
+}
+
+#container3 .teacher {
+	width: 400px;
+	height: 400px;
+	margin-left: 1300px;
+	margin-top: -200px;
+	margin-bottom: -150px;
+}
+
+/* Fourth Container */
+#container4 {
+	margin: 100px 300px;
+	padding: 0px;
+	background-color: lightgray; 
+	height: 860px;
+}
+
+#container4 .student .studentimg {
+	width: 490px;
+    height: 860px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#container4 .student .studentinfo {
+	float: right;
+	text-align: left;
+	padding: 120px 190px;
+	font-family: 'Raleway';
+}
+
+#container4 .student .studentinfo .studenttitle {
+	color: #193669;
+	font-size: 40px;
+}
+
+#container4 .student .studentinfo .aboutstudent {
+	line-height: 2.0;
+	font-size: 16px;
+}
+
+#container4 .pin {
+	width: 200px;
+	height: 200px;
+	margin-left: 1150px;
+	margin-top: -170px;
+}
+
+/* Fifth Container */
+#container5 {
+	padding: 50px;
+}
+
+#container5 h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container5 table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#container5 .sessionoption {
+	text-align: center;
+}
+
+#container5 select {
+	color: #001AEC;
+}
+
+#container5 p {
+	color: red;
+	text-align: center;
+}
+
+#container5 .preregister {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#container5 .preregister th {
+	padding: 10px;
+	font-family: 'Raleway';
+	background-color: aliceblue;
+}
+
+/* Sixth Container */
+#container6 {
+	padding: 50px;
+}
+
+#container6  h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container6 p {
+	color: red;
+	text-align: center;
+}
+
+#container6 table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+} 
+
+#container6 .sie th {
+	padding: 10px;
+	font-family: 'Raleway';
+	background-color: aliceblue;
+	text-align: center;
+}
+
+#container6 .sie td {
+	padding: 50px;
+}
+
+/* Seventh Container */
+#container7 {
+	padding: 50px;
+}
+
+#container7 h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container7 table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+} 
+
+#container7 .ces th {
+	padding: 10px;
+	font-family: 'Raleway';
+	background-color: aliceblue;
+	text-align: center;
+}
+
+#container7 .ces td {
+	padding: 50px;
+}
+
+/* Eigth Container */
+#container8 {
+	padding: 50px;
+}
+
+#container8 h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container8 p {
+	text-align: center;
+	color: grey;
+	font-weight: bold;
+}
+
+#container8 table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+} 
+
+#container8 .subjectslip th {
+	padding: 10px;
+	font-family: 'Raleway';
+	background-color: aliceblue;
+	text-align: center;
+}
+
+#container8 .subjectslip td {
+	padding: 50px;
+	text-align: center;
+}
+
+/* Nineth Container */
+#container9 {
+	padding: 50px;
+}
+
+#container9 .banner1 {
+	height: 200px;
+	width: 400px;
+	margin-left: 250px;
+	margin-bottom: -200px;
+}
+
+#container9 .banner2 {
+	height: 200px;
+	width: 400px;
+	margin-left: 1150px;
+	margin-bottom: -180px;
+}
+
+#container9 h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container9 table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#container9 .examresult th {
+	background-color: aliceblue;
+	font-family: 'Raleway';
+	text-align: center;
+	color: grey;
+}
+
+#container9 .examresult td {
+	font-weight: bold;
+}
+
+#container9 .exam {
+	color: black;
+	font-weight: bold;
+	float: right;
+}
+
+#container9 .printimg {
+	text-align: center;
+	float: right;
+	margin-right: 750px;
+	margin-left: 20px;
+	margin-top: -15px;
+}
+
+#container9 .examsliq th {
+	background-color: aliceblue;
+	padding: 10px;
+	font-family: 'Raleway';
+	text-align: center;
+	color: grey;
+}
+
+#container9 .examsliq td {
+	padding: 20px;
+	text-align: center;
+}
+
+#container9 .examsliq .excel {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#container9 p {
+	color: red;
+	text-align: center;
+}
+
+/* Tenth  Container */
+#container10 {
+	padding: 50px;
+}
+
+#container10 h1 {
+	color: #193669;
+	font-size: 40px;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#container10 p {
+	color: red;
+	text-align: center;
+}
+
+#container10 .result {
+	color: black;
+	font-weight: bold;
+	float: right;
+}
+
+#container10 .printimg2 {
+	text-align: center;
+	float: right;
+	margin-right: 750px;
+	margin-left: 20px;
+	margin-top: -15px;
+}
+
+/* Eleven  Container */
+#container11 {
+	padding: 100px;
+	background-color: #F7F7F7;
+}
+
+#container11 .feedbackimg {
+	margin: -100px;
+}
+
+#container11 .feedback {
+	text-align: center;
+	padding: 150px 300px 100px;
+}
+
+#container11 .feedback h1 {
+	color: #193669;
+	font-size: 40px;
+	text-align: left;
+}
+
+/* First Name */
+#container11 .firstname_group {
+	 position: relative;
+	 padding: 15px 5px 0;
+	 margin-top: 10px;
+	 width: 47%;
+}
+ #container11 .firstname_field {
+	 font-family: inherit;
+	 width: 100%;
+	 border: 0;
+	 border-bottom: 2px solid #9b9b9b;
+	 outline: 0;
+	 font-size: 1.3rem;
+	 color: black;
+	 padding: 7px 0;
+	 background: transparent;
+	 transition: border-color 0.2s;
+}
+ #container11 .firstname_field::placeholder {
+	 color: transparent;
+}
+ #container11 .firstname_field:placeholder-shown ~ .firstname_label {
+	 font-size: 1.3rem;
+	 cursor: text;
+	 top: 20px;
+}
+ #container11 .firstname_label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #9b9b9b;
+}
+ #container11 .firstname_field:focus {
+	 padding-bottom: 6px;
+	 font-weight: 700;
+	 border-width: 3px;
+	 border-image: linear-gradient(to right, #11998e, #38ef7d);
+	 border-image-slice: 1;
+}
+ #container11 .firstname_field:focus ~ .firstname_label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #11998e;
+	 font-weight: 700;
+}
+
+ #container11 .firstname_field:required, .firstname_field:invalid {
+	 box-shadow: none;
+}
+
+/* Last Name */
+#container11 .lastname_group {
+	 position: relative;
+	 padding: 15px 5px 0;
+	 margin: -55px 50px;
+	 width: 47%;
+	 float: right;
+}
+ #container11 .lastname_field {
+	 font-family: inherit;
+	 width: 100%;
+	 border: 0;
+	 border-bottom: 2px solid #9b9b9b;
+	 outline: 0;
+	 font-size: 1.3rem;
+	 color: black;
+	 padding: 7px 0;
+	 background: transparent;
+	 transition: border-color 0.2s;
+}
+ #container11 .lastname_field::placeholder {
+	 color: transparent;
+}
+ #container11 .lastname_field:placeholder-shown ~ .lastname_label {
+	 font-size: 1.3rem;
+	 cursor: text;
+	 top: 20px;
+}
+ #container11 .lastname_label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #9b9b9b;
+}
+ #container11 .lastname_field:focus {
+	 padding-bottom: 6px;
+	 font-weight: 700;
+	 border-width: 3px;
+	 border-image: linear-gradient(to right, #11998e, #38ef7d);
+	 border-image-slice: 1;
+}
+ #container11 .lastname_field:focus ~ .lastname_label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #11998e;
+	 font-weight: 700;
+}
+
+ #container11 .lastname_field:required, .lastname_field:invalid {
+	 box-shadow: none;
+}
+
+/* Email */
+#container11 .email_group {
+	 position: relative;
+	 padding: 15px 5px 0;
+	 margin-top: 10px;
+	 width: 94.6%;
+}
+ #container11 .email_field {
+	 font-family: inherit;
+	 width: 100%;
+	 border: 0;
+	 border-bottom: 2px solid #9b9b9b;
+	 outline: 0;
+	 font-size: 1.3rem;
+	 color: black;
+	 padding: 7px 0;
+	 background: transparent;
+	 transition: border-color 0.2s;
+}
+ #container11 .email_field::placeholder {
+	 color: transparent;
+}
+ #container11 .email_field:placeholder-shown ~ .email_label {
+	 font-size: 1.3rem;
+	 cursor: text;
+	 top: 20px;
+}
+ #container11 .email_label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #9b9b9b;
+}
+ #container11 .email_field:focus {
+	 padding-bottom: 6px;
+	 font-weight: 700;
+	 border-width: 3px;
+	 border-image: linear-gradient(to right, #11998e, #38ef7d);
+	 border-image-slice: 1;
+}
+ #container11 .email_field:focus ~ .email_label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #11998e;
+	 font-weight: 700;
+}
+
+ #container11 .email_field:required, .email_field:invalid {
+	 box-shadow: none;
+}
+
+/* Feedback */
+#container11 .feedback_group {
+	 position: relative;
+	 padding: 15px 5px 0;
+	 margin-top: 10px;
+	 width: 94.6%;
+}
+ #container11 .feedback_field {
+	 font-family: inherit;
+	 width: 100%;
+	 border: 0;
+	 border-bottom: 2px solid #9b9b9b;
+	 outline: 0;
+	 font-size: 1.3rem;
+	 color: black;
+	 padding: 7px 0;
+	 background: transparent;
+	 transition: border-color 0.2s;
+}
+ #container11 .feedback_field::placeholder {
+	 color: transparent;
+}
+ #container11 .feedback_field:placeholder-shown ~ .feedback_label {
+	 font-size: 1.3rem;
+	 cursor: text;
+	 top: 20px;
+}
+ #container11 .feedback_label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #9b9b9b;
+}
+ #container11 .feedback_field:focus {
+	 padding-bottom: 6px;
+	 font-weight: 700;
+	 border-width: 3px;
+	 border-image: linear-gradient(to right, #11998e, #38ef7d);
+	 border-image-slice: 1;
+}
+ #container11 .feedback_field:focus ~ .feedback_label {
+	 position: absolute;
+	 top: 0;
+	 display: block;
+	 transition: 0.2s;
+	 font-size: 1rem;
+	 color: #11998e;
+	 font-weight: 700;
+}
+
+ #container11 .feedback_field:required, .feedback_field:invalid {
+	 box-shadow: none;
+}
+
+#container11 .feedbacksubmit {
+  background-color: black;
+  color: white;
+  padding: 12px 70px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 20px;
+}
+
+#container11 .feedbacksubmit:hover {
+  background-color: grey;
+}
+
+#container11 .lovefeedback {
+	width: 300px;
+	height: 300px;
+	margin-left: 1450px;
+	margin-top: -200px;
+	margin-bottom: -100px;
+}
+
+/* Footer for all pages of the website */
+#footer {
+	text-align: center;
+	font-family: 'Raleway';
+	text-decoration: none;
+}
